@@ -85,7 +85,6 @@ public class MixedBeerBlockItem extends BeerBlockItem {
         return getMixedBeerName(stack);
     }
 
-    @Environment(EnvType.CLIENT)
     public Text getMixedBeerName(ItemStack stack) {
         int beerId = MixedBeerManager.getBeerId(stack);
         Item beerItem = Beers.byId(beerId).getBeerItem();
